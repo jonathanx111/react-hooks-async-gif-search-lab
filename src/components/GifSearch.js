@@ -1,7 +1,7 @@
 import { useState } from 'react'
 function GifSearch({ fetchGifs }) {
     const [search, setSearch] = useState("")
-    
+    console.log(search)
     function handleSubmit(event) {
         event.preventDefault()
         fetchGifs(search)
